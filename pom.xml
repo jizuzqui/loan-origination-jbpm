@@ -7,7 +7,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>loanOrigination</name>
-  <description>Loan Origination Project</description>
+  <description>Loan Origination Project </description>
   <distributionManagement>
     <repository>
       <id>Belfius-BizDevOps</id>
