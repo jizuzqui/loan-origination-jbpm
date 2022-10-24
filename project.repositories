@@ -3,9 +3,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
+        <id>local-mirror</id>
+        <url>file:///APPL/GEJB/local/rhpam/maven/repository</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>/APPL/GEJB/local/maven/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
   </repositories>
