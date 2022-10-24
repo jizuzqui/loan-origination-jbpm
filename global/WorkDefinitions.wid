@@ -1,132 +1,278 @@
 [
+    
     [
-        "name" : "BusinessRuleTask",
-        "displayName" : "BusinessRuleTask",
-        "category" : "jbpm-workitems-bpmn2",
-        "description" : "",
-        "defaultHandler" : "mvel: new org.jbpm.process.workitem.bpmn2.BusinessRuleTaskHandler()",
-        "documentation" : "jbpm-workitems-bpmn2/index.html",
-        "icon" : "defaultbusinessruletaskicon.png",
-
-        "parameters" : [
-            "KieSessionName" : new StringDataType(),
-            "KieSessionType" : new StringDataType()
-        ]
+    	"name" : "manageInformationRequest",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Manage Information Request",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
     ],
-
+    
     [
-        "name" : "DecisionTask",
-        "displayName" : "Decision Task",
-        "category" : "jbpm-workitems-bpmn2",
-        "description" : "",
-        "defaultHandler" : "mvel: new org.jbpm.process.workitem.bpmn2.DecisionTaskHandler()",
-        "documentation" : "jbpm-workitems-bpmn2/index.html",
-        "icon" : "defaultdecisiontaskicon.png",
-
-        "parameters" : [
-            "Model" : new StringDataType(),
-            "Namespace" : new StringDataType(),
-            "Decision" : new StringDataType()
-        ]
+    	"name" : "checkRequestAdmissibility",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Check Request Admissibility",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
     ],
-
+    
     [
-        "name" : "Email",
-        "displayName" : "Email",
-        "category" : "jbpm-workitems-email",
-        "description" : "",
-        "defaultHandler" : "mvel: new org.jbpm.process.workitem.email.EmailWorkItemHandler()",
-        "documentation" : "jbpm-workitems-email/index.html",
-        "icon" : "defaultemailicon.png",
-
-        "parameters" : [
-            "Reply-To" : new StringDataType(),
-            "Cc" : new StringDataType(),
-            "Bcc" : new StringDataType(),
-            "From" : new StringDataType(),
-            "To" : new StringDataType(),
-            "Body" : new StringDataType(),
-            "Attachments" : new StringDataType(),
-            "Subject" : new StringDataType(),
-            "Debug" : new StringDataType(),
-            "Template" : new StringDataType()
-        ]
+    	"name" : "checkRepresentationClassStatus",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Check Representation Class Status",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
     ],
-
+    
     [
-        "name" : "Rest",
-        "displayName" : "Rest",
-        "category" : "jbpm-workitems-rest",
-        "description" : "",
-        "defaultHandler" : "mvel: new org.jbpm.process.workitem.rest.RESTWorkItemHandler()",
-        "documentation" : "jbpm-workitems-rest/index.html",
-        "icon" : "defaultresticon.png",
-
-        "parameters" : [
-            "ConnectTimeout" : new StringDataType(),
-            "ResultClass" : new StringDataType(),
-            "ContentType" : new StringDataType(),
-            "AcceptCharset" : new StringDataType(),
-            "Headers" : new StringDataType(),
-            "AuthUrl" : new StringDataType(),
-            "Method" : new StringDataType(),
-            "ReadTimeout" : new StringDataType(),
-            "Url" : new StringDataType(),
-            "ContentTypeCharset" : new StringDataType(),
-            "HandleResponseErrors" : new StringDataType(),
-            "ContentData" : new StringDataType(),
-            "Username" : new StringDataType(),
-            "Content" : new StringDataType(),
-            "AcceptHeader" : new StringDataType(),
-            "AuthType" : new StringDataType(),
-            "Password" : new StringDataType()
-        ],
-        "results" : [
-            "Result" : new StringDataType()
-        ]
+    	"name" : "predetermineSolution",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Predetermine Solution",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
     ],
-
+    
+    
+    
+    
+    
     [
-        "name" : "WebService",
-        "displayName" : "WebService",
-        "category" : "jbpm-workitems-webservice",
-        "description" : "",
-        "defaultHandler" : "mvel: new org.jbpm.process.workitem.webservice.WebServiceWorkItemHandler()",
-        "documentation" : "jbpm-workitems-webservice/index.html",
-        "icon" : "defaultwebserviceicon.png",
-
-        "parameters" : [
-            "Endpoint" : new StringDataType(),
-            "Mode" : new StringDataType(),
-            "Parameter" : new StringDataType(),
-            "Operation" : new StringDataType(),
-            "Url" : new StringDataType(),
-            "Namespace" : new StringDataType(),
-            "Interface" : new StringDataType()
-        ],
-        "results" : [
-             "Result" : new StringDataType()
-        ]
+    	"name" : "proposeSolutions",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Propose Solutions",
+    	"icon" : "defaultservicenodeicon.png"
     ],
-
+    
+    
     [
-        "name" : "Log",
-        "displayName" : "Log",
-        "icon" : "defaultlogicon.png",
-
-        "parameters" : [
-          "Message" : new StringDataType()
-        ]
+    	"name" : "calculateCreditRiskDecision",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Calculate Credit Risk Decision",
+    	"icon" : "defaultservicenodeicon.png"
     ],
-
+    
     [
-        "name" : "Milestone",
-        "displayName" : "Milestone",
-        "category" : "Milestone",
-        "icon" : "defaultmilestoneicon.png",
-
-        "parameters" : [
-            "Condition" : new StringDataType()
-        ]
+    	"name" : "calculateComplianceDecision",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Calculate Compliance Decision",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "calculateBusinessDecision",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"results": [
+    	    "Result" : new ObjectDataType()
+    	],
+    	"displayName" : "Calculate Business Decision",
+    	"icon" : "defaultservicenodeicon.png"
+    ],
+    
+    [
+    	"name" : "manageDocument",
+    	"parameters" : [
+    			"correlationId" : new StringDataType(),
+    			"documentType" : new StringDataType()
+    	],
+    	"displayName" : "Manage Documents",
+    	"icon" : "defaultservicenodeicon.png"
+    ],
+    
+    [
+    	"name" : "provideContractualDocuments",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Provide Contractual Documents",
+    	"icon" : "defaultservicenodeicon.png"
+    ],
+    
+    [
+    	"name" : "createProductBundle",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Create Product Bundle",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "authorizeSolution",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Authorize Solution",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "compensateTask",
+    	"parameters" : [
+    			"correlationId" : new StringDataType(),
+    			"taskName" : new StringDataType(),
+    			"stateTo" : new StringDataType()
+    	],
+    	"displayName" : "Compensate Task",
+    	"icon" : "defaultservicenodeicon.png"
+    ],
+    
+    [
+    	"name" : "manageSigningInformation",
+    	"parameters" : [
+    			"correlationId" : new StringDataType(),
+    			"bundleState" : new ObjectDataType(),
+    			"bundleLastUpdateTime" : new StringDataType()
+    	],
+    	"displayName" : "Manage Signing Information",
+    	"icon" : "defaultservicenodeicon.png"
+    ],
+    
+    [
+    	"name" : "loanGrantingModelEvaluation",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Loan Granting Model Evaluation",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "checkIfCreditRiskExpertEvaluationCanBeReused",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Check If Credit Risk Expert Evaluation Can Be Reused",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "checkIfCreditAnalystAdviceIsNeeded",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Check If Credit Analyst Advice Is Needed",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "regenerateDocsForAnalysis",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Regenerate Docs For Analysis",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "useCreditAdviceAsCreditRiskDecision",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Use Credit Advice As Credit Risk Decision",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "checkIfExpertComplianceDecisionIsNeeded",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Check If Expert Compliance Decision Is Needed",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "runCreditRiskModel",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Run Credit Risk Model",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "checkGlobalAdviceNeededOrReusable",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Check Global Advice Needed Or Reusable",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "signSignatureBundle",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Sign Signature Bundle",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "markOfferAsSign",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Mark Offer As Signed",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "complianceDecisionModelEvaluation",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Compliance Decision Model Evaluation",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "extractContextualData",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Extract Contextual Data",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
+    ],
+    
+    [
+    	"name" : "linkNeedsToActorRequest",
+    	"parameters" : [
+    			"correlationId" : new StringDataType()
+    	],
+    	"displayName" : "Link Needs To Actor Request",
+    	"icon" : "defaultservicenodeicon.png",
+    	"category" : "KROC service tasks"
     ]
 ]
