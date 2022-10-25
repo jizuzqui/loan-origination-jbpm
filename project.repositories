@@ -3,14 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>local-mirror</id>
-        <url>file:///APPL/GEJB/local/rhpam/maven/repository</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>Belfius-BizDevOps</id>
         <url>https://pkgs.dev.azure.com/Belfius-AzureCloud/_packaging/Belfius-BizDevOps/maven/v1</url>
         <source>DISTRIBUTION_MANAGEMENT</source>
@@ -22,6 +14,14 @@
         <id>local</id>
         <url>/APPL/GEJB/local/maven/repository</url>
         <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local-mirror</id>
+        <url>file:///APPL/GEJB/local/rhpam/maven/repository</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
