@@ -7,7 +7,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>loanOrigination</name>
-  <description>Loan Origination Project </description>
+  <description>Loan Origination Project</description>
   <distributionManagement>
     <repository>
       <id>Belfius-BizDevOps</id>
@@ -54,6 +54,11 @@
       <artifactId>xstream</artifactId>
       <version>1.4.10</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>belfius.gejb</groupId>
+      <artifactId>belfius.gejb.api</artifactId>
+      <version>1.77.3-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <build>
